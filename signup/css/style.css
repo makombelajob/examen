@@ -24,6 +24,9 @@ html, body {
 }
 /* the main style of header */
 header {
+    /* position :fixed;
+    width: 100%;
+    left: 0; */
     display: flex;
     gap: 1rem;
     justify-content: space-between;
