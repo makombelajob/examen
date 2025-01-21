@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <script src="JS/update.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Signup</title>
+</head>
+<body>
+    <header>
+        <h2>For Ethical Purpose Only</h2>
+        <img src="../media/Logo.png" alt="Logo du site" width="100%" height="auto">
+
+        <ul>
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#">Signup</a></li>
+            <li><a href="#">Signin</a></li>
+        </ul>
+    </header>
+    <main>
+        <section>
+            <!-- Automatique update plugins -->
+            <h1>Test de Base de Donnée</h1>
+            <p>Last-Update-DB : <strong><span id="js-update"></span></strong></p>
+            <p>
+                Ceci est une base de donnée servant de test et de preuve de mise en oeuvre locale d'un Web Dynamique dans le cadre éthique et de recherche.
+                Je vous suggère d'utiliser un <strong><a href="https://temp-mail.org/">mail temporaire</a></strong> pour vous assurez d'un anonymat total. 
+            </p>
+        </section>
+        <div class="container">
+            <section class="small">
+                <h2>Windows</h2>
+                <ul>
+                    <li>Installation</li>
+                    <li>Gestion</li>
+                    <li>Commande</li>
+                    <li>Astuces</li>
+                </ul>
+            </section>
+            <section class="big">
+                <h2>Signin</h2>
+                <img src="../media/Logo.png" alt="Logo Login" width="100%" height="auto">
+                <fieldset>
+                    <form action="POST" class="form">
+                        <label for="Email" type="email" id="email">Email :</label>
+                        <input type="email" placeholder="temp@mail.xyz" required>
+                        <label for="name" type="name" id="name">Password :</label>
+                        <input type="name" placeholder="Password">
+                        <label for="choice" type="choice">Choisir-Db :</label>
+                        <select name="choice" id="choice">
+                        <option value="0"> **** choisir DB ****</option>
+                        <option value="1">Students</option>
+                        <option value="2">Teacher</option>
+                        </select>
+                        <button class="submit" name="submit">Envoyer</button>
+                    </form>
+                </fieldset>
+            </section>
+            <section class="small">
+                <h2>Linux</h2>
+                <ul>
+                    <li>Choix</li>
+                    <li>Installation</li>
+                    <li>Commande</li>
+                    <li>Astuces</li>
+                </ul>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="social-icons">
+            <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f">facebook</i></a>
+            <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter">twitter</i></a>
+            <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram">Instagram</i></a>
+            <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in">LinkdIn</i></a>
+        </div>
+        <img src="../media/Logo.png" alt="Logo du web" width="100%" height="auto">
+        <p>
+        &copy; 2025 job-johnny. <strong>Tout droits reservés</strong>
+        </p>
+    </footer>
+</body>
+</html>
