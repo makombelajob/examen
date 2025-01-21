@@ -1,0 +1,195 @@
+/* the main configuration file for .root */
+:root{
+  --clr-main : #003366;
+  --clr-title : #007acc;
+  --clr-txt : #333;
+  --clr-black : black;
+  --clr-white : #ffffff;
+  --txt-aln : center;
+  --itm-aln : center;
+  --dsp-flex : flex;
+  --dps-grid : grid;
+  --txt-dec : none;
+  --bx-shadow : 2px 2px 2px black;  
+}
+
+body{
+  font-family: "Ubuntu Sans Mono", serif;
+  font-optical-sizing: auto;
+  font-weight: 100%;
+  font-style: normal;
+  margin : 0;
+  padding : 0;
+  font-size: 100%;
+}
+
+/* the main style of header only */
+
+header {
+  background-color: var(--clr-main);
+  padding : 10px 10px;
+  margin-top: 0;
+  text-align: var(--txt-aln);
+  color: var(--clr-white);
+  img {
+    width: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border : 3px solid var(--clr-white);
+  }
+  h1 {
+    font-size: 30px;
+  }
+  h2{
+    font-size: 25px;
+  }
+  section {
+    address {
+      color : var(--clr-white);
+      a{
+        color : var(--clr-white);
+      }
+    }
+  }
+}
+
+/* The main style of the main tag */
+
+main{
+
+  background-image: url("http://jobrepair.ddns.net/multimedia/job.png");
+  background-repeat: no-repeat; /* one photo displayed */
+  background-position: var(--txt-aln); /* center image */
+  background-size: cover; /*cover all the page contenair */
+  color: var(--clr-black); */ 
+  h3{
+    text-align: var(--txt-aln);
+  }
+  section {
+    > p {
+      font-size : 20px;
+      color: var(--clr-black);
+      text-align: var(--txt-aln);
+    }
+    h3 {
+        font-size: 25px;
+        text-align: var(--txt-aln);
+    }
+  }
+  .dsp-grid {
+        display: var(--dps-grid);
+        grid-template-columns: repeat(4, 1fr);
+        gap : 10px;
+        padding: 10px;
+        article{
+        box-shadow: var(--bx-shadow);
+        background-color: var(--clr-title);
+        border-radius: 10px;
+        text-align: var(--txt-aln);
+        padding: 10px 10px 5px;
+        box-sizing: border-box;
+        a{
+          color : var(--clr-black);
+        }
+      }
+      /* important value for good look */
+      h3 {
+        grid-column: 1 / -1;
+      }
+      
+
+      }
+  .dsp-ctr { 
+    text-align: var(--txt-aln);   
+    h3{
+      color : --clr-black;
+      font-size : 25px;
+      text-align: var(--txt-aln);
+    }
+    div{
+    }
+    ul {
+      list-style-type: none;
+      li {
+        padding: 5px;
+      }
+    }
+  }
+  /* the main style for the class dsp-grid2 */
+  .dsp-grid2 {
+    display: var(--dps-grid);
+    grid-template-columns: repeat(4, 1fr);
+    gap : 10px;
+    padding : 0;
+    width: 100%;
+    h3 {
+      grid-column: 1 / -1 ;
+      text-align: var(--txt-aln);
+    }
+    article {
+      padding: 10px;
+      margin: 10px;
+      box-shadow: var(--bx-shadow);
+      background-color: var(--clr-txt);
+      color: var(--clr-white);
+      box-sizing: border-box;
+      border-radius : 10px;
+      a{
+        color : var(--clr-white);
+        &:hover{
+          color : rgb(0, 9, 128);
+        }
+        &:visited{
+          color : orangered;
+        }
+      }
+    }
+  }
+  /* main style for competences linguistiques */
+  .dsp-flex {
+    text-align: var(--txt-aln) ;
+    h3 {
+      margin-top : 60px;
+    }
+    ul {
+      display: var(--dsp-flex);
+      gap : 20px;
+      padding : 10px;
+      li {
+        text-align: var(--txt-aln);
+        padding : 4px;
+        margin: 10px auto;
+        background-color: var(--clr-title);
+        box-shadow: var(--bx-shadow);
+        border-radius: 10px;
+      }
+    }
+  }
+  /* main style for references */
+  section:last-child{
+    display: var(--dps-grid);
+    grid-template-columns: repeat(2, 50%);
+    color : var(--clr-white);
+    background-color: var(--clr-txt);
+    padding : 10px 10px;
+    text-align: var(--txt-aln);
+    h3{
+      grid-column: 1 / -1;
+    }
+    a {
+      color : var(--clr-white);
+    }
+  }
+}
+
+
+/* footer */
+footer {
+  background-color: var(--clr-main);
+  color : var(--clr-white);
+  text-align: var(--txt-aln);
+  padding : 5px 0 5px 0;
+  a{
+    color : var(--clr-white);
+  }
+}
