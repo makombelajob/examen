@@ -103,6 +103,9 @@ main {
                 li {
                     padding : 1rem;
                     text-align: var(--txt-aln);
+                    a {
+                        color : var(--clr-back);
+                    }
                 }
             }
         }
